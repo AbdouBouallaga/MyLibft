@@ -17,11 +17,9 @@ static size_t	*ft_strlenwsm(const char *s)
 	size_t			*c;
 	size_t			i;
 	size_t			j;
-	size_t			v;
 	unsigned char	*str;
 
 	i = 0;
-	v = 0;
 	j = ft_strlen(s);
 	if (j != 0)
 		j -= 1;

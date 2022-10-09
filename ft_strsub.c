@@ -15,12 +15,10 @@
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
 	unsigned int	i;
-	unsigned int	l;
 	char			*s1;
 	char			*s2;
 
 	i = 0;
-	l = (unsigned int)len;
 	s1 = (char *)s;
 	if (!s)
 		return (NULL);

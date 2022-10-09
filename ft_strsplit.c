@@ -87,12 +87,9 @@ static char	**count(const char *s1, char **str, char c)
 char		**ft_strsplit(char const *s, char c)
 {
 	char	**str;
-	size_t	i[2];
 
 	if (!s)
 		return (NULL);
-	i[0] = 0;
-	i[1] = ft_strlen(s);
 	str = NULL;
 	if (!(str = count(s, str, c)))
 		return (NULL);
