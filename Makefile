@@ -6,7 +6,7 @@
 #    By: babdelka <babdelka@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/03/30 20:55:07 by babdelka          #+#    #+#              #
-#    Updated: 2019/07/27 03:10:51 by babdelka         ###   ########.fr        #
+#    Updated: 2022/10/09 16:22:00 by babdelka         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -136,17 +136,17 @@ BNR = ft_atoi.o \
 	  ft_tolower.o \
 	  ft_toupper.o
 INC = libft.h
+CFLAGS = -Wall -Werror -Wextra
 
 all: $(NAME)
 
 $(NAME): $(BNR)
-	@gcc -Wall -Werror -Wextra -c $(SRC) -I $(INC)
-	@ar rc  $(NAME) $(BNR)
+	ar rc  $(NAME) $(BNR)
 
 clean:
-	@rm -f $(BNR)
+	rm -f $(BNR)
 
 fclean: clean
-	@rm -f $(NAME)
+	rm -f $(NAME)
 
 re: fclean all
