@@ -12,6 +12,8 @@
 
 NAME = libft.a
 SRC = ft_atoi.c \
+	  ft_atol.c \
+	  ft_atoll.c \
 	  ft_bzero.c \
 	  ft_countcdigit.c \
 	  ft_countidigit.c \
@@ -74,6 +76,8 @@ SRC = ft_atoi.c \
 	  ft_tolower.c \
 	  ft_toupper.c
 BNR = ft_atoi.o \
+	  ft_atol.o \
+	  ft_atoll.o \
 	  ft_bzero.o \
 	  ft_countcdigit.o \
 	  ft_countidigit.o \
